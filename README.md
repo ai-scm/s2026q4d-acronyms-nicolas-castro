@@ -25,13 +25,6 @@ Es una práctica en la que **se escribe la prueba antes que el código**. Sigue 
 
 Es una evolución de TDD que describe el **comportamiento esperado del sistema en lenguaje natural**, comprensible tanto para negocio como para el equipo técnico. Los escenarios se escriben en **Gherkin** con la estructura **Dado / Cuando / Entonces** (*Given / When / Then*), y herramientas como Cucumber, Behave o pytest-bdd los convierten en pruebas automáticas. Su objetivo es alinear a todos sobre *qué* debe hacer el sistema antes de construirlo.
 
-```gherkin
-Escenario: Retiro con saldo suficiente
-  Dado un cliente con saldo de 100
-  Cuando retira 40
-  Entonces su saldo debe ser 60
-```
-
 ### 4. ATDD: *Acceptance Test-Driven Development* (Desarrollo Guiado por Pruebas de Aceptación)
 
 Consiste en definir, **antes de desarrollar**, las **pruebas de aceptación**: los criterios que una funcionalidad debe cumplir para que el cliente o el negocio la dé por terminada. Se construye en colaboración entre negocio, QA y desarrollo, y establece una "definición de hecho" clara y medible. Se parece mucho a BDD, pero cambia el énfasis: ATDD se centra en *si cumple lo que el cliente necesita*, mientras que BDD se centra en *cómo se comporta* el sistema. Herramientas comunes: Robot Framework, FitNesse, Cucumber.
